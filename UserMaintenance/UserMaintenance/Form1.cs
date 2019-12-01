@@ -18,7 +18,7 @@ namespace UserMaintenance
         {
             InitializeComponent();
             lblLastName.Text = Resource1.LastName; // label1
-            lblFirstName.Text = Resource1.asdf; // label2
+           
             btnAdd.Text = Resource1.Add; // button1
 
             // listbox1
@@ -35,6 +35,13 @@ namespace UserMaintenance
                 
             };
             users.Add(u);
+        }
+
+        private void torles_Click(object sender, EventArgs e)
+        {
+            var valami = listUsers.SelectedIndex;
+            users.Remove(users[valami]);
+
         }
     }
 }

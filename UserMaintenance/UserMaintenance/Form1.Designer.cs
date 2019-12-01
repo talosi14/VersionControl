@@ -34,6 +34,7 @@
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.lblLastName = new System.Windows.Forms.Label();
             this.lblFirstName = new System.Windows.Forms.Label();
+            this.torles = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listUsers
@@ -47,9 +48,9 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(448, 313);
+            this.btnAdd.Location = new System.Drawing.Point(389, 209);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.Size = new System.Drawing.Size(157, 50);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "button1";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -87,11 +88,21 @@
             this.lblFirstName.TabIndex = 5;
             this.lblFirstName.Text = "label2";
             // 
+            // torles
+            // 
+            this.torles.Location = new System.Drawing.Point(587, 209);
+            this.torles.Name = "torles";
+            this.torles.Size = new System.Drawing.Size(160, 87);
+            this.torles.TabIndex = 6;
+            this.torles.Text = "törles";
+            this.torles.UseVisualStyleBackColor = true;
+            this.torles.Click += new System.EventHandler(this.torles_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.torles);
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.txtFirstName);
@@ -113,6 +124,7 @@
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.Label lblFirstName;
+        private System.Windows.Forms.Button torles;
     }
 }
 
